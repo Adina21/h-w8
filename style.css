@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.preloader{
+    position: fixed;
+    left: 50px;
+    top: 150px;
+    width: 100%;
+
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: 50px;
+    padding: 10 0;
+    text-align: center;
+    background-color: gold;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.loader{
+    width: 80px;
+    height: 80px;
+    border: 10px solid  red;
+    border-radius: 50%;
+    border-left-color: rgb(223, 81, 81);
+    border-right-color:rgb(243, 231, 231);
+    border-top-color: rgb(229, 174, 174) ;
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: circle-anime;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+    animation-iteration-count:  infinite;
+    animation-delay: 2s;
+}
+
+@keyframes circle-anime{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+
+    }
+
+}
